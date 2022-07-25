@@ -1,5 +1,6 @@
 * {
     font-family: 'Ibarra Real Nova', serif;
+    
 }
 
 body {
@@ -58,11 +59,39 @@ a:visited {
 }
 .signup_pitch {
     justify-self: flex-start;
+    font: bolder;
+    font-size: 1.5rem;
+    color: white;
 }
 fieldset {
-    
+    display: flex;
+    flex-wrap: wrap;
+    width: max(25vw, 360px);
+    justify-content: space-between;
+}
+
+label {
+    flex-shrink: 0;
+    color: white;
+    font-size: 16px;
+}
+
+legend {
+    font-size: 24px;
+    color: white;
 }
 
 input:invalid {
     border: solid red;
 }
+input:valid {
+    border: solid green;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.line-break {
+    width: 100%;
+  }

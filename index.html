@@ -26,14 +26,56 @@
                 <br>
                 You <i>know</i> you want to.
             </p>
-            <fieldset>
-                <legend>Let's do this!</legend>
 
-                <label for="firstName">FIRST NAME</label>
-                <br>
-                <input type="text" id="firstName" placeholder="Jim" pattern="\w+"> 
-            </fieldset>
-            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+
+                    <div class="left">
+                        <label for="firstName">FIRST NAME*</label>
+                        <br>
+                        <input type="text" id="firstName" placeholder="Jim" pattern="\w+" required> 
+                    </div>
+                    
+                    
+                    <div>
+                        <label for="lastName">LAST NAME*</label>
+                        <br>
+                        <input type="text" id="lastName" placeholder="Jones" pattern="\w+" required> 
+                    </div>
+                    
+                    <div class="line-break"></div>
+
+                    <div class="left">
+                        <label for="email">EMAIL*</label>
+                        <br>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <br>
+                        <input type="text" id="phone" pattern="\d{10}" placeholder="2224445555">
+                    </div>
+
+                    <div class="line-break"></div>
+
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <br>
+                        <input type="password" id="password" title="Must be at least 8 characters." pattern="\w{8,}">
+                    </div>
+
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <br>
+                        <input type="password" id="password" title="Password must match." pattern="\w{8,}">
+                    </div>
+                    
+
+                    
+                </fieldset>
+            </form>
         </div>
 
 
