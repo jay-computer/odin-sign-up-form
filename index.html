@@ -4,7 +4,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script> 
     </head>
 
     <body>
@@ -63,13 +64,13 @@
                     <div>
                         <label for="password">PASSWORD</label>
                         <br>
-                        <input type="password" id="password" title="Must be at least 8 characters." pattern="\w{8,}">
+                        <input type="password" id="password" title="Must be at least 8 characters." pattern="\w{8,}" required>
                     </div>
 
                     <div>
-                        <label for="phone">PHONE NUMBER</label>
+                        <label for="confirmPass">CONFIRM PASSWORD</label>
                         <br>
-                        <input type="password" id="password" title="Password must match." pattern="\w{8,}">
+                        <input type="password" id="confirmPass" title="Passwords must match." required>
                     </div>
                     
 
